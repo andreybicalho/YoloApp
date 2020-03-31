@@ -1,0 +1,3 @@
+rootProject.name='YoloApp'
+include ':app'
+include ':openCVLibrary346'
