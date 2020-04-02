@@ -169,8 +169,9 @@ public class Yolo {
             int idx = ind[i];
             float conf = confs.get(idx);
             Rect box = boxesArray[idx];
+            int classId = clsIds.get(idx);
 
-            String label = String.format("%s [%.0f%%]", classNames.get(idx), 100 * conf);
+            String label = String.format("%s [%.0f%%]", classNames.get(classId), 100 * conf);
             drawBoundingBox(inputImage, conf, label, box, 2);
         }
     }
